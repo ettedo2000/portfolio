@@ -9,14 +9,15 @@
         <form v-on:submit.prevent="addEmail">
           <div class="row">
             <div class="col-2"></div>
-            <div class="col-8 input-group w-50 align-items-center">
-              <input id="email" type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon" v-model="userData.email">
-
-              <div class="input-group-append">
+            <div class="col-lg-5 col-xs-12 input-group">
+              <input id="email" type="email" class="form-control mt-2" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon" v-model="userData.email">
+            </div>
+            <div class="col-lg-3 col-xs-12 input-group send1">
+              <div class="input-group-append send1-bnt">
                 <button v-if="!success" class="btn btn-secondary" type="submit">Notify Me!</button>
-                <div v-if="success" class="alert alert-success mt-3">
+                <button disabled v-if="success" class="alert alert-success">
                   Email sent!
-                </div>
+                </button>
               </div>
             </div>
             <div class="col-2"></div>
