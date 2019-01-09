@@ -32,7 +32,7 @@ $primary: #64a19d !default;
 }
 
 .mainNav .navbar-brand {
-  color: $black;
+  color: #161616;
   font-weight: 700;
   padding: .9rem 0;
 }
@@ -77,10 +77,10 @@ $primary: #64a19d !default;
     background-color: #fff;
   }
   .mainNav.navbar-shrink .navbar-brand {
-    color: $black;
+    color: #161616;
   }
   .mainNav.navbar-shrink .nav-link {
-    color: $black;
+    color: #161616;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
