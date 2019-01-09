@@ -1,7 +1,7 @@
 <template>
     <div>
     <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top mainNav"  v-bind:class="{'navbar-shrink': showNavbar }">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Odette Simons Portfolio</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,29 @@
 <script>
 
 export default {
-  name: 'Header'
+  name: 'Header',
+  data () {
+    return {
+      showNavbar: false
+    }
+  },
+  methods: {
+    handleScroll (event) {
+      // console.log(this.showNavbar)
+      if (window.pageYOffset > 100) {
+        this.showNavbar = true
+      } else {
+        this.showNavbar = false
+      }
+      console.log(this.showNavbar)
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
 }
 </script>
 
