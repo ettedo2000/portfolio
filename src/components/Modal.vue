@@ -42,7 +42,7 @@
     </div>
   </header>
     <!-- Portfolio -->
-    <!--<section class="content-section" id="portfolio">
+    <section class="content-section" id="portfolio">
       <div class="container">
         <div class="content-section-heading text-center">
           <h3 class="text-secondary mb-0">Portfolio</h3>
@@ -86,8 +86,11 @@
             <a class="portfolio-item" href="#">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Workspace</h2>
-                  <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                  <h2>EZDealer Website</h2>
+                  <p class="mb-0">A website Interface build for Dealerships to print new temporary tags for cars sold to customers.</p>
+                  <ul>
+                    <li>PHP</li>
+                  </ul>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/EZDealer1.png" alt="">
@@ -95,7 +98,7 @@
           </div>
         </div>
       </div>
-    </section>-->
+    </section>
   </div>
 </template>
 
