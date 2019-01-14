@@ -288,8 +288,7 @@ footer {
 
 @media (min-width: 992px) {
   .portfolio-item {
-    max-width: none;
-    margin: 0; }
+    max-width: 500px; }
 
   .portfolio-item .caption {
     -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
@@ -313,8 +312,16 @@ footer {
     clip-path: inset(2rem); }
 
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: #868e96;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem); } }
+.text-padding {
+  margin: 25px 0 25px 0; }
+
+.content-section-heading {
+  padding-top: 25px; }
+
+.text-indent {
+  text-indent: 10%; }
 
 /*# sourceMappingURL=main.css.map */

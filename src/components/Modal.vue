@@ -41,11 +41,76 @@
       </div>
     </div>
   </header>
+    <!-- About -->
+    <section class="content-section" ref="about">
+      <div class="container text-center text-padding">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>About Me!</h2>
+            <p class="lead mb-5 text-justify text-indent">
+              I started working on Basic HTML Web Design in 2008 quickly realizing my passion for Web Design and Development. In 2011 I decided to pursue my passion in a professional level by enrolling for an Associate Degree in Computer Science at Northeast State Community College in Blountville TN. I graduated in 2014 with a double Major in Internet and Web Development and Computer Programming.</p>
+
+            <p class="lead mb-5 text-justify text-indent">Since than I been working full time as a Web Developer maintaining, designing and developing websites. My work ranges from front-end designs(HTML, Java Script, JQuery, CSS, SCSS, Bootstrap, Vuejs and Angular), to back-end developments(PHP, Payment Portals, API, Ajax). I also work as a freelance Web Designer and have worked on several projects that include Word Press, Drupal and Pay Pal.</p>
+
+            <p class="lead mb-5 text-justify text-indent">If you like to learn more about my work or are interested to discuss a new project or rework an existing website please feel free to contact me.</p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- LINKS -->
+    <section class="content-section bg-dark text-white text-center" id="services">
+      <div class="container text-padding">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Services</h3>
+          <h2 class="mb-5">What We Offer</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-screen-smartphone"></i>
+            </span>
+            <h4>
+              <strong>Responsive</strong>
+            </h4>
+            <p class="text-faded mb-0">Looks great on any screen size!</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Redesigned</strong>
+            </h4>
+            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-like"></i>
+            </span>
+            <h4>
+              <strong>Favorited</strong>
+            </h4>
+            <p class="text-faded mb-0">Millions of users
+              <i class="fas fa-heart"></i>
+              Start Bootstrap!</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Question</strong>
+            </h4>
+            <p class="text-faded mb-0">I mustache you a question...</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Portfolio -->
-    <section class="content-section" id="portfolio">
+    <section class="content-section" id="projects">
       <div class="container">
         <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">Portfolio</h3>
           <h2 class="mb-5">Recent Projects</h2>
         </div>
         <div class="row no-gutters">
@@ -53,8 +118,8 @@
             <a class="portfolio-item" href="#">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Stationary</h2>
-                  <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                  <h2>Soap Shop</h2>
+                  <p class="mb-0">Commerce Project selling soaps and other body products.</p>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/GWD1.png" alt="">
@@ -153,6 +218,14 @@ export default {
         this.errorValid = false
         console.log('add2  ' + this.userData)
       }
+    },
+    scrollFix(refName) {
+      console.log(refName);
+      let element = this.$refs.refName;
+      console.log(this.$refs);
+      //let top = element;
+
+      window.scrollTo(0, top);
     }
   }
 }

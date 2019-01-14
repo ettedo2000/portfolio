@@ -20,5 +20,16 @@ export default new Router({
       component: About
     }
 
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    //https://router.vuejs.org/guide/advanced/scroll-behavior.html
+    console.log(to.hash+' -- '+from+' -- '+ savedPosition);
+    if (to.hash) {
+      return { selector: to.hash }
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })

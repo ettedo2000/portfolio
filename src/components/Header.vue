@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        <a class="nav-link js-scroll-trigger" @click="scrollFix('test')">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
@@ -44,7 +44,15 @@ export default {
         this.showNavbar = false
       }
       console.log(this.showNavbar)
-    }
+    },
+  scrollFix(refName) {
+    console.log(refName);
+    let element = this.$refs.refName;
+    console.log(this.$refs);
+    //let top = element;
+
+    window.scrollTo(0, top);
+  }
   },
   created () {
     window.addEventListener('scroll', this.handleScroll)
