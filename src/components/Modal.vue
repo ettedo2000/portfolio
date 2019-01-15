@@ -199,6 +199,12 @@ export default {
       reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/
     }
   },
+  watch: {
+    // $route.params.about
+    '$route' (to, from) {
+      alert(to.params.link)
+    }
+  },
   methods: {
     addEmail () {
       console.log('add1  ' + this.userData.email)
@@ -219,13 +225,13 @@ export default {
         console.log('add2  ' + this.userData)
       }
     },
-    scrollFix(refName) {
-      console.log(refName);
-      let element = this.$refs.refName;
-      console.log(this.$refs);
-      //let top = element;
+    scrollFix (refName) {
+      console.log(refName)
+      let element = this.$refs.refName
+      console.log(this.$refs)
+      // let top = element;
 
-      window.scrollTo(0, top);
+      window.scrollTo(0, top)
     }
   }
 }
