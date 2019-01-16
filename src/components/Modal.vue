@@ -1,7 +1,7 @@
 <template>
   <div>
   <!-- Header -->
-  <header class="masthead">
+  <header class="masthead" id="home">
     <div class="container d-flex h-100 w-75 align-items-center">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Coming Soon!</h1>
@@ -42,7 +42,7 @@
     </div>
   </header>
     <!-- About -->
-    <section class="content-section" ref="about">
+    <section class="content-section" id="about" v-bind:class="{'scroll-trigger': setNewScroll}">
       <div class="container text-center text-padding">
         <div class="row">
           <div class="col-lg-10 mx-auto">
@@ -164,6 +164,64 @@
         </div>
       </div>
     </section>
+    <!-- LINKS -->
+    <section class="content-section bg-dark text-white text-center" id="services">
+      <div class="container text-padding">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Services</h3>
+          <h2 class="mb-5">What We Offer</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-screen-smartphone"></i>
+            </span>
+            <h4>
+              <strong>Responsive</strong>
+            </h4>
+            <p class="text-faded mb-0">Looks great on any screen size!</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Redesigned</strong>
+            </h4>
+            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-like"></i>
+            </span>
+            <h4>
+              <strong>Favorited</strong>
+            </h4>
+            <p class="text-faded mb-0">Millions of users
+              <i class="fas fa-heart"></i>
+              Start Bootstrap!</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Question</strong>
+            </h4>
+            <p class="text-faded mb-0">I mustache you a question...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="content-section" id="contact">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h2 class="mb-5">Contact me</h2>
+        </div>
+
+      </div>
+    </section>
   </div>
 </template>
 
@@ -191,6 +249,7 @@ export default {
         email: '',
         date: new Date().toUTCString()
       },
+      divScroll: false,
       success: false,
       errorRequired: false,
       errorMassageEmpty: 'Email is required',
@@ -202,7 +261,7 @@ export default {
   watch: {
     // $route.params.about
     '$route' (to, from) {
-      alert(to.params.link)
+      this.setNewScroll()
     }
   },
   methods: {
@@ -225,13 +284,27 @@ export default {
         console.log('add2  ' + this.userData)
       }
     },
-    scrollFix (refName) {
-      console.log(refName)
-      let element = this.$refs.refName
-      console.log(this.$refs)
-      // let top = element;
+    setNewScroll (refName) {
+      console.log(this.$route.hash)
+        // let el = this.$route.hash
+        // el = el.replace('#','')
+        // if(el === 'about'){
+        //     this.divScroll = true
+        //     el.offsetTop = el.offsetTop + 70
+        // }else{
+        //     this.divScroll = false
+        // }
 
-      window.scrollTo(0, top)
+        const el = document.getElementById(this.$route.hash.slice(1))
+        if (el) {
+            window.scrollTo(0, el.offsetTop - 150)
+        }
+
+        //let elmnt = document.getElementById("about")
+        //console.log(elmnt.offsetHeight)
+       // console.log(elmnt.offsetWidth)
+       // console.log(elmnt.offsetTop - 70)
+
     }
   }
 }
