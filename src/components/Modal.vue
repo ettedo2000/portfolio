@@ -62,13 +62,12 @@
     <section class="content-section bg-dark text-white text-center" id="services">
       <div class="container text-padding">
         <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Services</h3>
-          <h2 class="mb-5">What We Offer</h2>
+          <h2 class="mb-5">What I Offer</h2>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
+              <img src="../assets/img/mobile-icon-7.png" style="filter: invert(100%);">
             </span>
             <h4>
               <strong>Responsive</strong>
@@ -297,7 +296,7 @@ export default {
 
         const el = document.getElementById(this.$route.hash.slice(1))
         if (el) {
-            window.scrollTo(0, el.offsetTop - 150)
+            window.scrollTo(0, el.offsetTop - 180)
         }
 
         //let elmnt = document.getElementById("about")
