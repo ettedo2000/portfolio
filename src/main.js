@@ -5,8 +5,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-// library.add(faCoffee)
+//library.add(faCoffee)
 // library.add(faSpinner)
 // library.add(faChessQueen)
 

@@ -43,7 +43,7 @@
   </header>
     <!-- About -->
     <section class="content-section" id="about" v-bind:class="{'scroll-trigger': setNewScroll}">
-      <div class="container text-center text-padding">
+      <div class="container text-center text-padding-top">
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>About Me!</h2>
@@ -60,55 +60,44 @@
     </section>
     <!-- LINKS -->
     <section class="content-section bg-dark text-white text-center" id="services">
-      <div class="container text-padding">
+      <div class="container text-padding-top">
         <div class="content-section-heading">
           <h2 class="mb-5">What I Offer</h2>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <img src="../assets/img/mobile-icon-7.png" style="filter: invert(100%);">
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <span class="mx-auto mb-3">
+              <img src="../assets/img/mobile-icon-7.png" style="filter: invert(100%);height: 30%">
             </span>
             <h4>
-              <strong>Responsive</strong>
+              <strong>Responsiveness</strong>
             </h4>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
+            <p class="text-faded mb-0">Design sites for all platforms. From Desktop to Mobile Responsiveness is an essential need for any web site. Implemented with Bootstrap, HTML5, CSS and SCSS.</p>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <span class="mx-auto mb-3">
+             <img src="../assets/img/design_web.png" style="filter: invert(100%);height: 30%">
             </span>
             <h4>
-              <strong>Redesigned</strong>
+              <strong>Redesign</strong>
             </h4>
-            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+            <p class="text-faded mb-0">Redesign existing sites for a more user friendly experience. Offer an easier navigation through the pages or just get a fresh look. Implemented with Bootstrap, JavaScript, Ajax and Node.</p>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
+          <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
+            <span class="mx-auto mb-3">
+             <img src="../assets/img/coding_web.png" style="filter: invert(100%);height: 30%">
             </span>
             <h4>
-              <strong>Favorited</strong>
+              <strong>Componants</strong>
             </h4>
-            <p class="text-faded mb-0">Millions of users
-              <i class="fas fa-heart"></i>
-              Start Bootstrap!</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-            <h4>
-              <strong>Question</strong>
-            </h4>
-            <p class="text-faded mb-0">I mustache you a question...</p>
+            <p class="text-faded mb-0">Maintain, build or updated an e-commerce with Database integration, API and Payment Portals. Make the integration as seamless to a consumer with the easy of a button click for the user. Implementing PHP, API and MySqli.</p>
           </div>
         </div>
       </div>
     </section>
     <!-- Portfolio -->
     <section class="content-section" id="projects">
-      <div class="container">
+      <div class="container text-padding-top">
         <div class="content-section-heading text-center">
           <h2 class="mb-5">Recent Projects</h2>
         </div>
@@ -164,23 +153,22 @@
       </div>
     </section>
     <!-- LINKS -->
-    <section class="content-section bg-dark text-white text-center" id="services">
-      <div class="container text-padding">
+    <section class="content-section bg-dark text-white text-center" id="links">
+      <div class="container text-padding-top">
         <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Services</h3>
-          <h2 class="mb-5">What We Offer</h2>
+          <h2 class="mb-5">Links</h2>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <span class="mx-auto mb-3">
+              <i class="fa fa-github" aria-hidden="true"></i>
             </span>
             <h4>
               <strong>Responsive</strong>
             </h4>
             <p class="text-faded mb-0">Looks great on any screen size!</p>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
               <i class="icon-pencil"></i>
             </span>
@@ -189,7 +177,7 @@
             </h4>
             <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
           </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
               <i class="icon-like"></i>
             </span>
@@ -200,25 +188,46 @@
               <i class="fas fa-heart"></i>
               Start Bootstrap!</p>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-            <h4>
-              <strong>Question</strong>
-            </h4>
-            <p class="text-faded mb-0">I mustache you a question...</p>
-          </div>
         </div>
       </div>
     </section>
     <!-- Contact -->
     <section class="content-section" id="contact">
-      <div class="container">
-        <div class="content-section-heading text-center">
-          <h2 class="mb-5">Contact me</h2>
+        <div class="section-content">
+          <h3>Contact Me</h3>
         </div>
+        <div class="contact-section">
+          <div class="container text-padding-top text-padding-bottom">
+            <form>
+            <div class="row">
+              <div class="col-sm-6 form-line">
+                <div class="form-group">
+                  <label>Your Name</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail">Email Address</label>
+                  <input type="email" class="form-control" id="email" >
+                </div>
+                <div class="form-group">
+                  <label for="telephone">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for ="description"> Message</label>
+                  <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+                </div>
+                <div>
 
+                  <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                </div>
+
+              </div>
+            </div>
+            </form>
+        </div>
       </div>
     </section>
   </div>

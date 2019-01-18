@@ -315,13 +315,33 @@ footer {
     background-color: #868e96;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem); } }
-.text-padding {
-  margin: 25px 0 25px 0; }
+.text-padding-top {
+  margin-top: 35px; }
+
+.text-padding-bottom {
+  margin-bottom: 35px; }
 
 .content-section-heading {
   padding-top: 25px; }
 
 .text-indent {
   text-indent: 10%; }
+
+.contact-section {
+  padding-top: 40px; }
+
+.contact-section .col-md-6 {
+  width: 50%; }
+
+.form-line {
+  border-right: 1px solid #B29999; }
+
+textarea.form-control {
+  height: 135px;
+  /* margin-top: px;*/ }
+
+.section-content {
+  text-align: center;
+  margin-top: 35px; }
 
 /*# sourceMappingURL=main.css.map */
