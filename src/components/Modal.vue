@@ -4,10 +4,17 @@
   <header class="masthead" id="home">
     <div class="container d-flex h-100 w-75 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Coming Soon!</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">We're working hard to finish the development of this site. Our target launch date is March 2019! Sign up for updates using the form below!</h2>
-        <!-- <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>-->
-        <form v-on:submit.prevent="addEmail">
+        <h1 class="mx-auto my-0 text-uppercase">Welcome!</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">
+          “A successful website does three things:
+          It attracts the right kinds of visitors.
+          Guides them to the main services or products you offer.
+          Collects Contact details for future ongoing relations.”
+          <br/>
+          <span style="float: right;font-size: 1rem;color: #40464d">― Mohamed Saad </span>
+        </h2>
+        <h4 class="text-white-50 mx-auto mt-2 mb-5">My name is Odette Simons and I am a FULL STACK Developer</h4>
+        <!--<form v-on:submit.prevent="addEmail">
           <div class="row">
             <div class="col-2"></div>
             <div class="col-lg-5 col-xs-12 input-group">
@@ -23,7 +30,7 @@
             </div>
             <div class="col-2"></div>
           </div>
-        </form>
+        </form>-->
         <div class="row" v-if="errorRequired">
           <div class="col-2"></div>
           <div class="col-8 input-group w-50 align-items-center">
@@ -304,6 +311,7 @@ export default {
         // }
 
         const el = document.getElementById(this.$route.hash.slice(1))
+        console.log(el)
         if (el) {
             window.scrollTo(0, el.offsetTop - 180)
         }
