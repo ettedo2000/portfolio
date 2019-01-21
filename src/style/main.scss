@@ -15,6 +15,7 @@ $black: #161616 !default;
 
 $primary: #64a19d !default;
 
+
 .mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -311,7 +312,7 @@ a:focus, a:hover {
 }
 
 footer {
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
 
 @media only screen and (max-width: 922px) {
@@ -346,8 +347,15 @@ footer {
 }
 
 .portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
+    color: transparent;
+    margin: auto 2rem 2rem;
+  }
+
+.portfolio-item .caption .caption-content:hover {
+  color: #ffffff;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
 }
 
 .portfolio-item .caption .caption-content h2 {
@@ -375,7 +383,7 @@ footer {
     transition: opacity 0.25s;
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   .portfolio-item img {
     -webkit-transition: -webkit-clip-path 0.25s ease-out;
@@ -390,7 +398,6 @@ footer {
     background-color: rgb(134,142,150);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
-
   }
 }
 
@@ -398,7 +405,7 @@ footer {
   margin-top: 35px;
 }
 .text-padding-bottom {
-  margin-bottom: 35px;
+  padding-bottom: 35px;
 }
 
 .content-section-heading{

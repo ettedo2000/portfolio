@@ -17,6 +17,12 @@
                         <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#links">Links</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
                 </ul>

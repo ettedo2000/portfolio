@@ -14,37 +14,6 @@
           <span style="float: right;font-size: 1rem;color: #40464d">― Mohamed Saad </span>
         </h2>
         <h4 class="text-white-50 mx-auto mt-2 mb-5">My name is Odette Simons and I am a FULL STACK Developer</h4>
-        <!--<form v-on:submit.prevent="addEmail">
-          <div class="row">
-            <div class="col-2"></div>
-            <div class="col-lg-5 col-xs-12 input-group">
-              <input id="email" type="email" class="form-control mt-2" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon" v-model="userData.email">
-            </div>
-            <div class="col-lg-3 col-xs-12 input-group send1">
-              <div class="input-group-append send1-bnt">
-                <button v-if="!success" class="btn btn-secondary" type="submit">Notify Me!</button>
-                <button disabled v-if="success" class="alert alert-success">
-                  Email sent!
-                </button>
-              </div>
-            </div>
-            <div class="col-2"></div>
-          </div>
-        </form>-->
-        <div class="row" v-if="errorRequired">
-          <div class="col-2"></div>
-          <div class="col-8 input-group w-50 align-items-center">
-            <span style="color:darkred;margin: 10px 5px;">{{errorMassageEmpty}}</span>
-          </div>
-          <div class="col-2"></div>
-        </div>
-        <div class="row" v-if="errorValid">
-          <div class="col-2"></div>
-          <div class="col-8 input-group w-50 align-items-center">
-            <span style="color:darkred;margin: 10px 5px;">{{errorMassageValid}}</span>
-          </div>
-          <div class="col-2"></div>
-        </div>
       </div>
     </div>
   </header>
@@ -67,10 +36,7 @@
     </section>
     <!-- LINKS -->
     <section class="content-section bg-dark text-white text-center" id="services">
-      <div class="container text-padding-top">
-        <div class="content-section-heading">
-          <h2 class="mb-5">What I Offer</h2>
-        </div>
+      <div class="container pt-5 mb-5 pb-5 mt-5">
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
             <span class="mx-auto mb-3">
@@ -111,46 +77,78 @@
         <div class="row no-gutters">
           <div class="col-lg-6">
             <a class="portfolio-item" href="#">
-              <span class="caption">
+              <span class="caption ">
                 <span class="caption-content">
                   <h2>Soap Shop</h2>
                   <p class="mb-0">Commerce Project selling soaps and other body products.</p>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PayPal</li>
+                    <li>JavaScript</li>
+                  </ul>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/GWD1.png" alt="">
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="https://jsfiddle.net/ettedo2000/mteaLr8w/" target="_blank">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Ice Cream</h2>
-                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                  <h2>Tile Game</h2>
+                  <p class="mb-0">Flip the tiles game written in Javascript</p>
+                  <ul>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                  </ul>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/title_game-2.png" alt="">
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="https://secure.tncountyclerk.com/" target="_blank">
               <span class="caption">
                 <span class="caption-content">
-                  <h2>Strawberries</h2>
-                  <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                  <h2>Tennessee County Clerk</h2>
+                  <p class="mb-0">Tennessee site that is offering online payment and information lookup for your county clerk office.</p>
+                  <div class="row" style="margin-left: 5px;">
+                      <div class="col-6">
+                        <li>Bootstrap</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                      </div>
+                      <div class="col-6">
+                        <li>PHP</li>
+                        <li>Payment Frame</li>
+                        <li>JQuery</li>
+                      </div>
+                  </div>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/TNCountyClerk1.png" alt="">
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="https://www.ezdealertags.com/eztag/login.php" target="_blank">
               <span class="caption">
                 <span class="caption-content">
                   <h2>EZDealer Website</h2>
                   <p class="mb-0">A website Interface build for Dealerships to print new temporary tags for cars sold to customers.</p>
-                  <ul>
-                    <li>PHP</li>
-                  </ul>
+                  <div class="row" style="margin-left: 5px;">
+                      <div class="col-6">
+                        <li>Bootstrap</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                      </div>
+                      <div class="col-6">
+                        <li>PHP</li>
+                        <li>Payment Frame</li>
+                        <li>JQuery</li>
+                      </div>
+                  </div>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/EZDealer1.png" alt="">
@@ -161,39 +159,26 @@
     </section>
     <!-- LINKS -->
     <section class="content-section bg-dark text-white text-center" id="links">
-      <div class="container text-padding-top">
-        <div class="content-section-heading">
-          <h2 class="mb-5">Links</h2>
-        </div>
+      <div class="container pt-5 mb-5 mt-5">
         <div class="row">
-          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-            <span class="mx-auto mb-3">
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </span>
-            <h4>
-              <strong>Responsive</strong>
-            </h4>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
+          <div class="col-sm-4">
+            <!--<font-awesome-icon icon="code-branch" size="4x" class="mb-3"/>-->
+            <img src="../assets/img/github.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
+            <div>
+              <a class="link" href="https://github.com/ettedo2000" target="_blank" >GitHub</a>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
-            <h4>
-              <strong>Redesigned</strong>
-            </h4>
-            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          <div class="col-sm-4">
+            <img src="../assets/img/linkedin.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
+            <div>
+              <a href="https://www.linkedin.com/in/odette-salhofer-simons/" target="_blank">LinkedIN</a>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
-            </span>
-            <h4>
-              <strong>Favorited</strong>
-            </h4>
-            <p class="text-faded mb-0">Millions of users
-              <i class="fas fa-heart"></i>
-              Start Bootstrap!</p>
+          <div class="col-sm-4">
+            <img src="../assets/img/jsfiddle.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
+            <div>
+              <a href="https://jsfiddle.net/user/ettedo2000/fiddles/" target="_blank">jsfiddle</a>
+            </div>
           </div>
         </div>
       </div>
@@ -205,32 +190,51 @@
         </div>
         <div class="contact-section">
           <div class="container text-padding-top text-padding-bottom">
-            <form>
+            <form v-on:submit.prevent="addEmail">
             <div class="row">
               <div class="col-sm-6 form-line">
                 <div class="form-group">
                   <label>Your Name</label>
-                  <input type="text" class="form-control" id="name">
+                  <input type="text" class="form-control" id="name" v-model="userData.name" placeholder="Full Name">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail">Email Address</label>
-                  <input type="email" class="form-control" id="email" >
+                  <input type="email" class="form-control" id="email" v-model="userData.email" placeholder="your@email.com">
                 </div>
                 <div class="form-group">
                   <label for="telephone">Phone Number</label>
-                  <input type="tel" class="form-control" id="phone">
+                  <input type="tel" class="form-control" id="phone" v-model="userData.phone" placeholder="555-555-1234" maxlength="12">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <label for ="description"> Message</label>
-                  <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+                  <textarea  class="form-control" id="description" placeholder="Enter Your Message" v-model="userData.message"></textarea>
                 </div>
-                <div>
-
-                  <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                <div v-if="!success">
+                  <button type="submit" class="btn btn-dark">
+                    <i class="fa fa-paper-plane" aria-hidden="true">
+                    </i> Send Message</button>
                 </div>
-
+                <div v-if="success">
+                  <button disabled type="button" class="btn btn-light"  style="color:darkgreen;">
+                    <font-awesome-icon icon="check"></font-awesome-icon>
+                   Email sent!</button>
+                </div>
+                <div class="row" v-if="errorRequired">
+                  <div class="col-2"></div>
+                  <div class="col-8 input-group w-50 align-items-center">
+                    <span style="color:darkred;margin: 10px 5px;">{{errorMassageEmpty}}</span>
+                  </div>
+                  <div class="col-2"></div>
+                </div>
+                <div class="row" v-if="errorValid">
+                  <div class="col-2"></div>
+                  <div class="col-8 input-group w-50 align-items-center">
+                    <span style="color:darkred;margin: 10px 5px;">{{errorMassageValid}}</span>
+                  </div>
+                  <div class="col-2"></div>
+                </div>
               </div>
             </div>
             </form>
@@ -262,7 +266,10 @@ export default {
     return {
       userData: {
         email: '',
-        date: new Date().toUTCString()
+        date: new Date().toUTCString(),
+        name: '',
+        phone: '',
+        message: ''
       },
       divScroll: false,
       success: false,
@@ -293,6 +300,9 @@ export default {
         refEmail.push(this.userData)
         this.userData.email = ''
         this.userData.date = ''
+        this.userData.name = ''
+        this.userData.phone = ''
+        this.userData.message = ''
         this.success = true
         this.errorRequired = false
         this.errorValid = false
@@ -327,5 +337,14 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+
+   a{
+       color: #ced4da;
+     }
+
+  a:hover{
+    color: #f5f5f5;
+  }
+
 </style>
