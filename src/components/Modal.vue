@@ -76,79 +76,44 @@
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption ">
-                <span class="caption-content">
+            <a class="portfolio-item" v-b-modal.modal1 style="cursor: pointer">
+              <span class="caption" >
+                <span class="caption-content" style="min-height: 150px;">
                   <h2>Soap Shop</h2>
                   <p class="mb-0">Commerce Project selling soaps and other body products.</p>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>PayPal</li>
-                    <li>JavaScript</li>
-                  </ul>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/GWD1.png" alt="">
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://jsfiddle.net/ettedo2000/mteaLr8w/" target="_blank">
+            <a class="portfolio-item" v-b-modal.modal2 style="cursor: pointer">
               <span class="caption">
-                <span class="caption-content">
+                <span class="caption-content" style="min-height: 150px;">
                   <h2>Tile Game</h2>
                   <p class="mb-0">Flip the tiles game written in Javascript</p>
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                  </ul>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/title_game-2.png" alt="">
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://secure.tncountyclerk.com/" target="_blank">
+            <a class="portfolio-item" v-b-modal.modal3 style="cursor: pointer">
               <span class="caption">
-                <span class="caption-content">
+                <span class="caption-content" style="min-height: 150px;">
                   <h2>Tennessee County Clerk</h2>
                   <p class="mb-0">Tennessee site that is offering online payment and information lookup for your county clerk office.</p>
-                  <div class="row" style="margin-left: 5px;">
-                      <div class="col-6">
-                        <li>Bootstrap</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                      </div>
-                      <div class="col-6">
-                        <li>PHP</li>
-                        <li>Payment Frame</li>
-                        <li>JQuery</li>
-                      </div>
-                  </div>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/TNCountyClerk1.png" alt="">
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="https://www.ezdealertags.com/eztag/login.php" target="_blank">
+            <a class="portfolio-item" v-b-modal.modal4 style="cursor: pointer">
               <span class="caption">
-                <span class="caption-content">
+                <span class="caption-content" style="min-height: 150px">
                   <h2>EZDealer Website</h2>
                   <p class="mb-0">A website Interface build for Dealerships to print new temporary tags for cars sold to customers.</p>
-                  <div class="row" style="margin-left: 5px;">
-                      <div class="col-6">
-                        <li>Bootstrap</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                      </div>
-                      <div class="col-6">
-                        <li>PHP</li>
-                        <li>Payment Frame</li>
-                        <li>JQuery</li>
-                      </div>
-                  </div>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/EZDealer1.png" alt="">
@@ -240,6 +205,60 @@
             </form>
         </div>
       </div>
+      <!-- Modal Component -->
+      <b-modal id="modal1" title="Soap Store">
+        <p class="my-4">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PayPal</li>
+            <li>JavaScript</li>
+          </ul>
+        </p>
+      </b-modal>
+
+      <b-modal id="modal2" title="Tile Game">
+        <p class="my-4">
+        <ul>
+          <li>JavaScript</li>
+          <li>CSS</li>
+          <li>HTML</li>
+        </ul>
+        <a style="color: blue" href="https://jsfiddle.net/ettedo2000/mteaLr8w/" target="_blank">
+          https://jsfiddle.net/ettedo2000/mteaLr8w/
+        </a>
+        </p>
+      </b-modal>
+
+      <b-modal id="modal3" title="Tennessee County Clerk">
+        <p class="my-4"><div class="row" style="margin-left: 5px;">
+        <div class="col-6">
+          <li>Bootstrap</li>
+          <li>CSS</li>
+          <li>HTML</li>
+        </div>
+        <div class="col-6">
+          <li>PHP</li>
+          <li>Payment Frame</li>
+          <li>JQuery</li>
+        </div>
+      </div></p>
+      </b-modal>
+
+      <b-modal id="modal4" title="EZDealerTag">
+        <p class="my-4"><div class="row" style="margin-left: 5px;">
+        <div class="col-6">
+          <li>Bootstrap</li>
+          <li>CSS</li>
+          <li>HTML</li>
+        </div>
+        <div class="col-6">
+          <li>PHP</li>
+          <li>Payment Frame</li>
+          <li>JQuery</li>
+        </div>
+      </div></p>
+      </b-modal>
     </section>
   </div>
 </template>
@@ -278,6 +297,12 @@ export default {
       errorValid: false,
       errorMassageValid: 'The email must be a valid email',
       reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/
+    }
+  },
+  props: {
+    cancelDisabled: {
+      type: Boolean,
+      default: true
     }
   },
   watch: {
