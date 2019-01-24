@@ -2,7 +2,8 @@
   <div>
   <!-- Header -->
   <header class="masthead" id="home">
-    <div class="container d-flex h-100 w-75 align-items-center">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="col-md-12">
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Welcome!</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">
@@ -14,6 +15,7 @@
           <span style="float: right;font-size: 1rem;color: #40464d">― Mohamed Saad </span>
         </h2>
         <h4 class="text-white-50 mx-auto mt-2 mb-5">My name is Odette Simons and I am a FULL STACK Developer</h4>
+      </div>
       </div>
     </div>
   </header>
@@ -242,7 +244,8 @@
           <li>Payment Frame</li>
           <li>JQuery</li>
         </div>
-      </div></p>
+      </div>
+        </p>
       </b-modal>
 
       <b-modal id="modal4" title="EZDealerTag">

@@ -15,7 +15,6 @@ $black: #161616 !default;
 
 $primary: #64a19d !default;
 
-
 .mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -49,7 +48,7 @@ $primary: #64a19d !default;
   background-color: transparent;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {*/
   .mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -96,7 +95,9 @@ $primary: #64a19d !default;
     outline: none;
     border-bottom: 0.25rem solid $primary;
   }
-}
+/*}*/
+
+
 
 .masthead {
   position: relative;
