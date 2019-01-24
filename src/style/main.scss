@@ -369,7 +369,7 @@ footer {
   font-size: 1.2rem;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {*/
   .portfolio-item {
     max-width: 500px;
    // margin: 0;
@@ -399,6 +399,21 @@ footer {
     background-color: rgb(134,142,150);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
+  }
+/*}*/
+@media (max-width: 992px) {
+  .portfolio-item .caption .caption-content {
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top:3rem;
+    font-size: small;
+  }
+
+  .portfolio-item .caption .caption-content p {
+    font-weight: 100;
+    font-size: 0.75rem;
   }
 }
 
@@ -436,3 +451,9 @@ textarea.form-control {
   text-align: center;
   margin-top: 35px;
 }
+
+/*
+.link-div:hover{
+  background-color: lightgray;
+  margin: auto;
+}*/

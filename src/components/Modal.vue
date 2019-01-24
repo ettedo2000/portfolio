@@ -28,7 +28,7 @@
             <p class="lead mb-5 text-justify text-indent">
               I started working on Basic HTML Web Design in 2008 quickly realizing my passion for Web Design and Development. In 2011 I decided to pursue my passion in a professional level by enrolling for an Associate Degree in Computer Science at Northeast State Community College in Blountville TN. I graduated in 2014 with a double Major in Internet and Web Development and Computer Programming.</p>
 
-            <p class="lead mb-5 text-justify text-indent">Since than I been working full time as a Web Developer maintaining, designing and developing websites. My work ranges from front-end designs(HTML, Java Script, JQuery, CSS, SCSS, Bootstrap, Vuejs and Angular), to back-end developments(PHP, Payment Portals, API, Ajax). I also work as a freelance Web Designer and have worked on several projects that include Word Press, Drupal and Pay Pal.</p>
+            <p class="lead mb-5 text-justify text-indent">Since than I been working full time as a Web Developer maintaining, designing and developing websites. My work ranges from front-end designs(HTML, Java Script, JQuery, CSS, SCSS, Bootstrap, Vuejs and Angular), to back-end developments(PHP, Payment Portals, API, Ajax). I also work as a freelance Web Designer and have worked on several projects that include WordPress, Drupal and PayPal.</p>
 
             <p class="lead mb-5 text-justify text-indent">If you like to learn more about my work or are interested to discuss a new project or rework an existing website please feel free to contact me.</p>
             <a class="btn btn-dark btn-xl js-scroll-trigger" href="#contact">Contact</a>
@@ -129,11 +129,15 @@
       <div class="container pt-5 mb-5 mt-5">
         <div class="row">
           <div class="col-sm-4">
+            <!--<div class="link-div w-25 h-75">-->
             <!--<font-awesome-icon icon="code-branch" size="4x" class="mb-3"/>-->
-            <img src="../assets/img/github.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
+            <a class="link" href="https://github.com/ettedo2000" target="_blank" >
+              <img src="../assets/img/github.png" style="filter: invert(100%);height: 40%" class="mb-3"/>
             <div>
-              <a class="link" href="https://github.com/ettedo2000" target="_blank" >GitHub</a>
+              <span>GitHub</span>
             </div>
+            </a>
+             <!-- </div>-->
           </div>
           <div class="col-sm-4">
             <img src="../assets/img/linkedin.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
