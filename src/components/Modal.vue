@@ -218,7 +218,7 @@
         </div>
       </div>
       <!-- Modal Component -->
-      <b-modal id="modal1" title="Soap Store">
+      <b-modal id="modal1" title="Soap Store" ok-only ok-variant="secondary" ok-title="OK">
         <p class="my-4">
           <ul>
             <li>HTML</li>
@@ -229,7 +229,7 @@
         </p>
       </b-modal>
 
-      <b-modal id="modal2" title="Tile Game">
+      <b-modal id="modal2" title="Tile Game" ok-only ok-variant="secondary" ok-title="OK">
         <p class="my-4">
         <ul>
           <li>JavaScript</li>
@@ -242,7 +242,7 @@
         </p>
       </b-modal>
 
-      <b-modal id="modal3" title="Tennessee County Clerk">
+      <b-modal id="modal3" title="Tennessee County Clerk" ok-only ok-variant="secondary" ok-title="OK">
         <p class="my-4"><div class="row" style="margin-left: 5px;">
         <div class="col-6">
           <li>Bootstrap</li>
@@ -258,7 +258,7 @@
         </p>
       </b-modal>
 
-      <b-modal id="modal4" title="EZDealerTag">
+      <b-modal id="modal4" title="EZDealerTag" ok-only ok-variant="secondary" ok-title="OK">
         <p class="my-4"><div class="row" style="margin-left: 5px;">
         <div class="col-6">
           <li>Bootstrap</li>
@@ -313,10 +313,6 @@ export default {
     }
   },
   props: {
-    cancelDisabled: {
-      type: Boolean,
-      default: true
-    }
   },
   watch: {
     // $route.params.about
@@ -349,26 +345,13 @@ export default {
     },
     setNewScroll (refName) {
       console.log(this.$route.hash)
-        // let el = this.$route.hash
-        // el = el.replace('#','')
-        // if(el === 'about'){
-        //     this.divScroll = true
-        //     el.offsetTop = el.offsetTop + 70
-        // }else{
-        //     this.divScroll = false
-        // }
-
         const el = document.getElementById(this.$route.hash.slice(1))
         console.log(el)
         if (el) {
+          setTimeout(function(){
             window.scrollTo(0, el.offsetTop - 180)
+          },1)
         }
-
-        //let elmnt = document.getElementById("about")
-        //console.log(elmnt.offsetHeight)
-       // console.log(elmnt.offsetWidth)
-       // console.log(elmnt.offsetTop - 70)
-
     }
   }
 }
