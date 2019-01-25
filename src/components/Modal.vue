@@ -129,26 +129,32 @@
       <div class="container pt-5 mb-5 mt-5">
         <div class="row">
           <div class="col-sm-4">
-            <!--<div class="link-div w-25 h-75">-->
+            <div class="link-div w-25 h-75 pt-3">
             <!--<font-awesome-icon icon="code-branch" size="4x" class="mb-3"/>-->
-            <a class="link" href="https://github.com/ettedo2000" target="_blank" >
-              <img src="../assets/img/github.png" style="filter: invert(100%);height: 40%" class="mb-3"/>
-            <div>
-              <span>GitHub</span>
-            </div>
-            </a>
-             <!-- </div>-->
+              <a class="link" href="https://github.com/ettedo2000" target="_blank" >
+                <img src="../assets/img/github.png" style="filter: invert(100%);height: 40%" class="mb-3"/>
+                <div>
+                  <span>GitHub</span>
+                </div>
+              </a>
+             </div>
           </div>
           <div class="col-sm-4">
-            <img src="../assets/img/linkedin.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
-            <div>
-              <a href="https://www.linkedin.com/in/odette-salhofer-simons/" target="_blank">LinkedIN</a>
+            <div class="link-div w-25 h-75 pt-3">
+              <a href="https://www.linkedin.com/in/odette-salhofer-simons/" target="_blank">
+                <img src="../assets/img/linkedin.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
+                  <span>LinkedIN</span>
+              </a>
             </div>
           </div>
           <div class="col-sm-4">
-            <img src="../assets/img/jsfiddle.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
-            <div>
-              <a href="https://jsfiddle.net/user/ettedo2000/fiddles/" target="_blank">jsfiddle</a>
+            <div class="link-div w-25 h-75 pt-3">
+              <a href="https://jsfiddle.net/user/ettedo2000/fiddles/" target="_blank">
+                <img src="../assets/img/jsfiddle.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
+                <div>
+                 <span>JsFiddle</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -371,12 +377,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
-   a{
-       color: #ced4da;
-     }
+  a{
+    color: #ced4da;
+  }
 
   a:hover{
     color: #f5f5f5;
   }
 
+   a:focus, a:hover {
+     color: #f5f5f5;
+   }
 </style>

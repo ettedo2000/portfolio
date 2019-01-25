@@ -413,7 +413,12 @@ footer {
 
   .portfolio-item .caption .caption-content p {
     font-weight: 100;
-    font-size: 0.75rem;
+    font-size: 0.60rem;
+  }
+
+  .portfolio-item .caption .caption-content h2 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
   }
 }
 
@@ -452,8 +457,12 @@ textarea.form-control {
   margin-top: 35px;
 }
 
-/*
-.link-div:hover{
-  background-color: lightgray;
+
+.link-div {
   margin: auto;
-}*/
+}
+
+.link-div:hover{
+  background-color: #454d55;
+  margin: auto;
+}
