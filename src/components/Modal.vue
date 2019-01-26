@@ -120,6 +120,27 @@
               </span>
               <img class="img-fluid" src="../assets/img/EZDealer1.png" alt="">
             </a>
+          </div> <div class="col-lg-6">
+            <a class="portfolio-item" v-b-modal.modal3 style="cursor: pointer">
+              <span class="caption">
+                <span class="caption-content" style="min-height: 150px;">
+                  <h2>Marriage Specialty Certificate</h2>
+                  <p class="mb-0">This site offers users to select from multiple certificated images to purchase a specialty marriage certificates.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="../assets/img/marriageSpecialtyCertificate.png" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" v-b-modal.modal6 style="cursor: pointer">
+              <span class="caption">
+                <span class="caption-content" style="min-height: 150px">
+                  <h2>Blue Ridge Travel Association</h2>
+                  <p class="mb-0">A WordPress travel information website, guiding travlers through the Blue Ridge Mountains in Virgina</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="../assets/img/blueridgetravel.png" alt="">
+            </a>
           </div>
         </div>
       </div>
@@ -220,6 +241,9 @@
       <!-- Modal Component -->
       <b-modal id="modal1" title="Soap Store" ok-only ok-variant="secondary" ok-title="OK">
         <p class="my-4">
+          One of my older projects this site is a e-store for a soap and cosmetic store.
+          The website implement PayPal, shopping cart, a product gallery and Adobe
+          Photoshop slice.
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -231,46 +255,77 @@
 
       <b-modal id="modal2" title="Tile Game" ok-only ok-variant="secondary" ok-title="OK">
         <p class="my-4">
+          A simple JavaScript tile game. The objective is to click on each tile to rotated the tile to reveal each images
+          and find the dog walking in the park.
+          Tiles rearrange into new position on every refresh.
+          <br/>This game was written in:
         <ul>
           <li>JavaScript</li>
           <li>CSS</li>
           <li>HTML</li>
         </ul>
-        <a style="color: blue" href="https://jsfiddle.net/ettedo2000/mteaLr8w/" target="_blank">
-          https://jsfiddle.net/ettedo2000/mteaLr8w/
+        <a style="color: blue" href="https://tile-game-df326.firebaseapp.com/" target="_blank">
+            https://tile-game-df326.firebaseapp.com/
         </a>
         </p>
       </b-modal>
 
       <b-modal id="modal3" title="Tennessee County Clerk" ok-only ok-variant="secondary" ok-title="OK">
-        <p class="my-4"><div class="row" style="margin-left: 5px;">
-        <div class="col-6">
-          <li>Bootstrap</li>
-          <li>CSS</li>
-          <li>HTML</li>
+        <p class="my-4">
+          This site is a Tennessee State website build by Business Information System that allows user to renew plates, apply for business or notary application or request marriage licenses.
+          In the 5 years working for BIS I have been a part of the team that would maintain, updated and develop all component in Tennessee County Clerk.
+          <br/>Just recently I have helped with redesigning this site. Our task was to update the back-end to be compatible with PHP 7, overhaul MYSQL, and the front-end.
+          Our goal was to make the site mobile responsive, user friendly while giving the site a new fresh look.
+          The site implements following:
+        <div class="row" style="margin-left: 5px;">
+          <div class="col-6">
+            <li>Bootstrap</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Ajax</li>
+            <li>JQuery</li>
+            <li>JAvaScript</li>
+          </div>
+          <div class="col-6">
+            <li>PHP</li>
+            <li>Payment Frame</li>
+            <li>JQuery</li>
+            <li>API</li>
+            <li>Mysqli/UUCP</li>
+            <li>Cron Process</li>
+          </div>
         </div>
-        <div class="col-6">
-          <li>PHP</li>
-          <li>Payment Frame</li>
-          <li>JQuery</li>
-        </div>
-      </div>
         </p>
       </b-modal>
 
       <b-modal id="modal4" title="EZDealerTag" ok-only ok-variant="secondary" ok-title="OK">
-        <p class="my-4"><div class="row" style="margin-left: 5px;">
-        <div class="col-6">
-          <li>Bootstrap</li>
-          <li>CSS</li>
-          <li>HTML</li>
+        <p class="my-4">
+          In 2014, I was the main developer for EzDealerTag build by Business Information System in Tennessee.
+          The site was established to let Dealers register there sold cars and print temporary tags
+          for the buyer. The program also has an API Interface for larger dealerships to register multiple cars, while
+          another API is directly sending information to the Tennessee State database for law enforcement use.
+          ACH is setup for direct payment of state, county and local fees.
+
+          The site implements following:
+          <div class="row" style="margin-left: 5px;">
+            <div class="col-6">
+            <li>Bootstrap</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Ajax</li>
+            <li>JQuery</li>
+            <li>JavaScript</li>
+          </div>
+          <div class="col-6">
+            <li>PHP</li>
+            <li>Payment Frame</li>
+            <li>JQuery</li>
+            <li>API</li>
+            <li>Mysqli/UUCP</li>
+            <li>Cron Process</li>
+          </div>
         </div>
-        <div class="col-6">
-          <li>PHP</li>
-          <li>Payment Frame</li>
-          <li>JQuery</li>
-        </div>
-      </div></p>
+        </p>
       </b-modal>
     </section>
   </div>
