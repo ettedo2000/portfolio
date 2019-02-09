@@ -466,3 +466,9 @@ textarea.form-control {
   background-color: #454d55;
   margin: auto;
 }
+
+@media (max-width: 992px) {
+  .mobile-text{
+    padding: 30px;
+  }
+}

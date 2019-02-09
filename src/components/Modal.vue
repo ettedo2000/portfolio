@@ -23,7 +23,7 @@
     <section class="content-section" id="about" v-bind:class="{'scroll-trigger': setNewScroll}">
       <div class="container text-center text-padding-top">
         <div class="row">
-          <div class="col-lg-10 mx-auto">
+          <div class="col-lg-10 mx-auto mobile-text">
             <h2>About Me!</h2>
             <p class="lead mb-5 text-justify text-indent">
               I started working on Basic HTML Web Design in 2008 quickly realizing my passion for Web Design and Development. In 2011 I decided to pursue my passion in a professional level by enrolling for an Associate Degree in Computer Science at Northeast State Community College in Blountville TN. I graduated in 2014 with a double Major in Internet and Web Development and Computer Programming.</p>
@@ -121,11 +121,11 @@
               <img class="img-fluid" src="../assets/img/EZDealer1.png" alt="">
             </a>
           </div> <div class="col-lg-6">
-            <a class="portfolio-item" v-b-modal.modal3 style="cursor: pointer">
+            <a class="portfolio-item" v-b-modal.modal5 style="cursor: pointer">
               <span class="caption">
                 <span class="caption-content" style="min-height: 150px;">
-                  <h2>Marriage Specialty Certificate</h2>
-                  <p class="mb-0">This site offers users to select from multiple certificated images to purchase a specialty marriage certificates.</p>
+                  <h2>Specialty Marriage Certificate</h2>
+                  <p class="mb-0">This site offers users to select from multiple images to purchase a specialty marriage certificates.</p>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/marriageSpecialtyCertificate.png" alt="">
@@ -136,7 +136,7 @@
               <span class="caption">
                 <span class="caption-content" style="min-height: 150px">
                   <h2>Blue Ridge Travel Association</h2>
-                  <p class="mb-0">A WordPress travel information website, guiding travlers through the Blue Ridge Mountains in Virgina</p>
+                  <p class="mb-0">A WordPress travel information website, guiding travelers through the Blue Ridge Mountains in Virgina.</p>
                 </span>
               </span>
               <img class="img-fluid" src="../assets/img/blueridgetravel.png" alt="">
@@ -265,7 +265,7 @@
           <li>HTML</li>
         </ul>
         <a style="color: blue" href="https://tile-game-df326.firebaseapp.com/" target="_blank">
-            https://tile-game-df326.firebaseapp.com/
+            tile-game-df326.firebaseapp.com
         </a>
         </p>
       </b-modal>
@@ -325,6 +325,49 @@
             <li>Cron Process</li>
           </div>
         </div>
+        </p>
+      </b-modal>
+
+      <b-modal id="modal5" title="specialtyMarriage" ok-only ok-variant="secondary" ok-title="OK">
+        <p class="my-4">
+          In 2017, I was the main developer for Specialty Marriage Certificate build by Business Information System in Tennessee.
+          The site was established to let users select and purchase specialty marriage certificates of various images
+          offered by the counties. The site is setup for direct payment and uucp to local counties.
+
+          The site implements following:
+        <div class="row" style="margin-left: 5px;">
+          <div class="col-6">
+            <li>Bootstrap</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Ajax</li>
+            <li>JQuery</li>
+            <li>JavaScript</li>
+          </div>
+          <div class="col-6">
+            <li>PHP</li>
+            <li>Payment Frame</li>
+            <li>API</li>
+            <li>Mysqli/UUCP</li>
+            <li>Cron Process</li>
+          </div>
+        </div>
+        </p>
+      </b-modal>
+      <b-modal id="modal6" title="Tile Game" ok-only ok-variant="secondary" ok-title="OK">
+        <p class="my-4">
+          This is a volunteer project helping an organization updating and maintaining a Travel WordPress site. Currently a
+          new map with travel hot-spots was added to the site.
+          This site is still being updated and developed.
+          <br/>This site was written in:
+        <ul>
+          <li>WordPress</li>
+          <li>Plugins</li>
+          <li>HTML</li>
+        </ul>
+        <a style="color: blue" href="https://www.blueridgetravel.org/interactive_map/" target="_blank">
+          www.blueridgetravel.org
+        </a>
         </p>
       </b-modal>
     </section>
