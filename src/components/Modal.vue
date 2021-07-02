@@ -7,12 +7,10 @@
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Welcome!</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">
-          “A successful website does three things:
-          It attracts the right kinds of visitors.
-          Guides them to the main services or products you offer.
-          Collects Contact details for future ongoing relations.”
+          "The important thing is not to stop questioning.
+          Curiosity has its own reason for existing."
           <br/>
-          <span style="float: right;font-size: 1rem;color: #40464d">― Mohamed Saad </span>
+          <span style="float: right;font-size: 1rem;color: #40464d">—Albert Einstein</span>
         </h2>
         <h4 class="text-white-50 mx-auto mt-2 mb-5">My name is Odette Simons and I am a FULL STACK Developer</h4>
       </div>
