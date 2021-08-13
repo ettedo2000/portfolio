@@ -360,6 +360,7 @@ footer {
   -webkit-clip-path: inset(2rem);
   clip-path: inset(2rem); }
 
+
 /*}*/
 @media (max-width: 992px) {
   .portfolio-item .caption .caption-content {

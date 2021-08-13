@@ -6,15 +6,17 @@
         <div class="col-md-12">
           <div class="mx-auto text-center">
             <h1 class="mx-auto my-0 text-uppercase">Welcome!</h1>
+            <h4 class="text-white-50 mx-auto mt-2 mb-5">My name is Odette Simons</h4>
             <h2 class="text-white-50 mx-auto mt-2 mb-5">
-              “A successful website does three things:
-              It attracts the right kinds of visitors.
-              Guides them to the main services or products you offer.
-              Collects Contact details for future ongoing relations.”
-              <br/>
-              <span style="float: right;font-size: 1rem;color: #40464d">― Mohamed Saad </span>
+              <ul id="headerQuote">
+                <li>To succeed, one needs to learn</li>
+                <li>To learn, one needs to be curious</li>
+                <li>To be curious, one needs to be intuitive</li>
+                <li>To be intuitive, one needs to appreciate all the small and big things in life.</li>
+              </ul>
             </h2>
-            <h4 class="text-white-50 mx-auto mt-2 mb-5">My name is Odette Simons and I am a FULL STACK Developer</h4>
+            <h4 class="text-white-50 mx-auto mt-2 mb-5">and I am a FULL STACK Developer</h4>
+
           </div>
         </div>
       </div>
@@ -27,7 +29,7 @@
             <h2>About Me!</h2>
             <p class="lead mb-5 text-justify text-indent">
               I started working on Basic HTML Web Design in 2008 quickly realizing my passion for Web Design and Development. In 2011 I decided to pursue my passion in a professional level by enrolling for an Associate Degree in Computer Science at Northeast State Community College in Blountville TN. I graduated in 2014 with a double Major in Internet and Web Development and Computer Programming.</p>
-            <p class="lead mb-5 text-justify text-indent">Since than I been working full time as a Web Developer maintaining, designing and developing websites. My work ranges from front-end designs(HTML, Java Script, JQuery, CSS, SCSS, Bootstrap, Vuejs and Angular), to back-end developments(PHP, Payment Portals, API, Ajax). I also work as a freelance Web Designer and have worked on several projects that include WordPress, Drupal and PayPal.</p>
+            <p class="lead mb-5 text-justify text-indent">Since than I been working full time as a Web Developer maintaining, designing and developing websites. My work ranges from front-end designs(HTML, Java Script, JQuery, CSS, SCSS, Bootstrap, Vuejs and Angular), to back-end developments(PHP, Payment Portals, API, Ajax). I also work as a freelance Web Designer and have worked on several projects that include WordPress, Laravel and PayPal.</p>
             <p class="lead mb-5 text-justify text-indent">If you like to learn more about my work or are interested to discuss a new project or rework an existing website please feel free to contact me.</p>
             <a class="btn btn-dark btn-xl js-scroll-trigger" href="#contact">Contact</a>
           </div>
@@ -69,80 +71,23 @@
       </div>
     </section>
     <!-- Portfolio -->
+
+
+
     <section class="content-section" id="projects">
       <div class="container text-padding-top">
         <div class="content-section-heading text-center">
           <h2 class="mb-5">Recent Projects</h2>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a class="portfolio-item" v-b-modal.modal1 style="cursor: pointer">
-              <span class="caption" >
-                <span class="caption-content" style="min-height: 150px;">
-                  <h2>Soap Shop</h2>
-                  <p class="mb-0">Commerce Project selling soaps and other body products.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="../assets/img/GWD1.png" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" v-b-modal.modal2 style="cursor: pointer">
-              <span class="caption">
-                <span class="caption-content" style="min-height: 150px;">
-                  <h2>Tile Game</h2>
-                  <p class="mb-0">Flip the tiles game written in Javascript</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="../assets/img/title_game-2.png" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" v-b-modal.modal3 style="cursor: pointer">
-              <span class="caption">
-                <span class="caption-content" style="min-height: 150px;">
-                  <h2>Tennessee County Clerk</h2>
-                  <p class="mb-0">Tennessee site that is offering online payment and information lookup for your county clerk office.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="../assets/img/TNCountyClerk1.png" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" v-b-modal.modal4 style="cursor: pointer">
-              <span class="caption">
-                <span class="caption-content" style="min-height: 150px">
-                  <h2>EZDealer Website</h2>
-                  <p class="mb-0">A website Interface build for Dealerships to print new temporary tags for cars sold to customers.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="../assets/img/EZDealer1.png" alt="">
-            </a>
-          </div> <div class="col-lg-6">
-          <a class="portfolio-item" v-b-modal.modal5 style="cursor: pointer">
-              <span class="caption">
-                <span class="caption-content" style="min-height: 150px;">
-                  <h2>Specialty Marriage Certificate</h2>
-                  <p class="mb-0">This site offers users to select from multiple images to purchase a specialty marriage certificates.</p>
-                </span>
-              </span>
-            <img class="img-fluid" src="../assets/img/marriageSpecialtyCertificate.png" alt="">
-          </a>
-        </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" v-b-modal.modal6 style="cursor: pointer">
-              <span class="caption">
-                <span class="caption-content" style="min-height: 150px">
-                  <h2>Blue Ridge Travel Association</h2>
-                  <p class="mb-0">A WordPress travel information website, guiding travelers through the Blue Ridge Mountains in Virgina.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="../assets/img/blueridgetravel.png" alt="">
-            </a>
-          </div>
+
         </div>
       </div>
     </section>
+
+
+
+
     <!-- LINKS -->
     <section class="content-section bg-dark text-white text-center" id="links">
       <div class="container pt-5 mb-5 mt-5">
@@ -162,7 +107,10 @@
             <div class="link-div w-25 h-75 pt-3">
               <a href="https://www.linkedin.com/in/odette-salhofer-simons/" target="_blank">
                 <img src="../assets/img/linkedin.png" style="filter: invert(100%);height: 30%" class="mb-3"/>
-                <span>LinkedIN</span>
+                <div>
+                  <span>LinkedIN</span>
+                </div>
+
               </a>
             </div>
           </div>
@@ -380,4 +328,8 @@ a:hover{
 a:focus, a:hover {
   color: #f5f5f5;
 }
+ul#headerQuote {
+  list-style-type: none;
+}
+
 </style>
