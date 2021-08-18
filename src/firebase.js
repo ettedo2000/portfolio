@@ -18,10 +18,8 @@ firebase.initializeApp(firebaseConfig)
 // utils
 const db = firebase.firestore()
 const auth = firebase.auth()
-console.log(db);
 const writeEmail = db.collection('email')
 
-console.log(writeEmail);
 export {
     db,
     auth,
