@@ -4,31 +4,26 @@ import 'firebase/firestore'
 
 // firebase init
 const firebaseConfig = {
-    apiKey: 'AIzaSyBFi_xidFH-ZIsRftqJNHNe-n-GaeW2DMY',
-    authDomain: 'odette-simons-portfolio.firebaseapp.com',
-    databaseURL: 'https://odette-simons-portfolio.firebaseio.com',
-    projectId: 'odette-simons-portfolio',
-    storageBucket: 'odette-simons-portfolio.appspot.com',
-    messagingSenderId: '92673616789'
-}
+    apiKey: "AIzaSyBFi_xidFH-ZIsRftqJNHNe-n-GaeW2DMY",
+    authDomain: "odette-simons-portfolio.firebaseapp.com",
+    databaseURL: "https://odette-simons-portfolio.firebaseio.com",
+    projectId: "odette-simons-portfolio",
+    storageBucket: "odette-simons-portfolio.appspot.com",
+    messagingSenderId: "92673616789",
+    appId: "1:92673616789:web:cca4a3a4deec56ae1f249c"
+};
+
 firebase.initializeApp(firebaseConfig)
 
 // utils
 const db = firebase.firestore()
 const auth = firebase.auth()
+console.log(db);
+const writeEmail = db.collection('email')
 
-// collection references
-const refEmail = db.collection('email')
-const postsCollection = db.collection('posts')
-const commentsCollection = db.collection('comments')
-const likesCollection = db.collection('likes')
-
-// export utils/refs
+console.log(writeEmail);
 export {
     db,
     auth,
-    refEmail,
-    postsCollection,
-    commentsCollection,
-    likesCollection
+    writeEmail
 }

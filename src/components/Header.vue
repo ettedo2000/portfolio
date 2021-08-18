@@ -3,8 +3,12 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top mainNav"  v-bind:class="{'navbar-shrink': showNavbar }">
       <div class="container">
-        <a v-bind:class="{'title-color': showNavbar}" class="navbar-brand js-scroll-trigger" href="/">Odette Simons Portfolio</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <a v-bind:class="{'title-color': showNavbar}" class="navbar-brand js-scroll-trigger" href="/">
+          <span v-bind:style="{color: activeColor}">Odette Simons Portfolio</span>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
         </button>
@@ -38,7 +42,8 @@ export default {
   name: 'Header',
   data () {
     return {
-      showNavbar: false
+      showNavbar: false,
+      activeColor: 'lightgray'
     }
   },
   methods: {
@@ -46,10 +51,12 @@ export default {
       // console.log(this.showNavbar)
       if (window.pageYOffset > 100) {
         this.showNavbar = true
+        this.activeColor = 'black'
       } else {
-        this.showNavbar = false
+        this.showNavbar = false;
+        this.activeColor = 'lightgray'
       }
-      console.log(this.showNavbar)
+      //console.log(this.showNavbar)
     }
   },
   created () {

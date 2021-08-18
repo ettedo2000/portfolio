@@ -15,7 +15,7 @@
                 <li>To be intuitive, one needs to appreciate all the small and big things in life.</li>
               </ul>
             </h2>
-            <h4 class="text-white-50 mx-auto mt-2 mb-5">and I am a FULL STACK Developer</h4>
+            <h4 class="text-white-50 mx-auto mt-2 mb-5">and I am a <br/>WEB APPLICATION DEVELOPER</h4>
 
           </div>
         </div>
@@ -175,7 +175,8 @@
                 <div class="row" v-if="errorValid">
                   <div class="col-2"></div>
                   <div class="col-8 input-group w-50 align-items-center">
-                    <span style="color:darkred;margin: 10px 5px;">{{errorMassageValid}}</span>
+                    <span v-if="firebaseError">{{errorSendingEmail}}</span>
+                    <span v-else style="color:darkred;margin: 10px 5px;">{{errorMassageValid}}</span>
                   </div>
                   <div class="col-2"></div>
                 </div>
@@ -247,8 +248,7 @@
 
 <script>
 
-//auth
-import { refEmail} from '@/firebase'
+import { writeEmail } from '@/firebase'
 
 export default {
   name: 'Modal',
@@ -266,44 +266,53 @@ export default {
       errorRequired: false,
       errorMassageEmpty: 'Email is required',
       errorValid: false,
-      errorMassageValid: 'The email must be a valid email'
+      errorMassageValid: 'The email must be a valid email',
+      firebaseError: false,
+      errorSendingEmail: 'An error Occurred sending the email'
     }
   },
   props: {
   },
   watch: {
-    // $route.params.about
-   /* '$route' (to, from) {
+
+    '$route'() {
       this.setNewScroll()
-    }*/
+      //console.log(this.$route)
+    }
   },
   methods: {
     addEmail () {
-      console.log('add1  ' + this.userData.email)
-      console.log(this.userData.email)
-      if (this.userData.email) {
+      /* eslint-disable no-useless-escape */
+      let reg =  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/;
+     // console.log(this.userData.email)
+      if (this.userData.email == '') {
         this.errorRequired = true
         this.errorValid = false
-      } else if (!this.reg.test(this.userData.email)) {
+      } else if (!reg.test(this.userData.email)) {
         this.errorValid = true
         this.errorRequired = false
       } else {
-        refEmail.push(this.userData)
-        this.userData.email = ''
-        this.userData.date = ''
-        this.userData.name = ''
-        this.userData.phone = ''
-        this.userData.message = ''
-        this.success = true
-        this.errorRequired = false
-        this.errorValid = false
-        console.log('add2  ' + this.userData)
+        writeEmail.add({
+          email: this.userData.email,
+          date: this.userData.date,
+          name: this.userData.name,
+          phone: this.userData.phone,
+          message: this.userData.message
+        }).then(() => {
+          this.success = true
+          this.errorRequired = false
+          this.errorValid = false
+        }).catch((error) => {
+            console.log(error)
+          this.errorValid = true
+          this.errorRequired = false
+          this.firebaseError = true
+        });
       }
     },
     setNewScroll () {
-      console.log(this.$route.hash)
+
       const el = document.getElementById(this.$route.hash.slice(1))
-      console.log(el)
       if (el) {
         setTimeout(function(){
           window.scrollTo(0, el.offsetTop - 180)
