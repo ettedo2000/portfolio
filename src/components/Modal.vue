@@ -6,7 +6,7 @@
         <div class="col-md-12">
           <div class="mx-auto text-center">
             <h1 class="mx-auto my-0 text-uppercase">Welcome!</h1>
-            <h4 class="text-white-50 mx-auto mt-2 mb-5">My name is Odette Simons</h4>
+            <h4 class="text-white-50 mx-auto mt-2 mb-5">My name is Odette Simons<br/>I am a <br/>WEB APPLICATION DEVELOPER</h4>
             <h2 class="text-white-50 mx-auto mt-2 mb-5">
               <ul id="headerQuote">
                 <li>To succeed, one needs to learn</li>
@@ -15,8 +15,6 @@
                 <li>To be intuitive, one needs to appreciate all the small and big things in life.</li>
               </ul>
             </h2>
-            <h4 class="text-white-50 mx-auto mt-2 mb-5">and I am a <br/>WEB APPLICATION DEVELOPER</h4>
-
           </div>
         </div>
       </div>
