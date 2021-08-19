@@ -69,25 +69,76 @@
       </div>
     </section>
     <!-- Portfolio -->
-//add programing languages I know
-//add work history
-//add skills
-
-
-    <section class="content-section" id="projects">
+    <section class="content-section" id="skill">
       <div class="container text-padding-top">
         <div class="content-section-heading text-center">
-          <h2 class="mb-5">Recent Projects</h2>
+          <h2 class="mb-5">Skills</h2>
         </div>
         <div class="row no-gutters">
-
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <b-table hover :items="skill" :fields="fields">
+              <template #cell(level)="data">
+                <b-progress :value="data.value" :max="100" class="mb-3"></b-progress>
+              </template>
+            </b-table>
+            <div class="content-section-heading text-center">
+            </div>
+            <b-table hover :items="tools" :fields="toolfields">
+              <template #cell(level)="data">
+                <b-progress :value="data.value" :max="100" class="mb-3"></b-progress>
+              </template>
+            </b-table>
+            <div class="content-section-heading text-center">
+            </div>
+            <b-table hover :items="lang">
+              <template #cell(level)="data">
+                <b-progress :value="data.value" :max="100" class="mb-3"></b-progress>
+              </template>
+            </b-table>
+          </div>
+          <div class="col-md-2"></div>
         </div>
       </div>
     </section>
+<!--    <section class="content-section" id="achievement">
+      <div class="container text-padding-top">
+        <div class="content-section-heading text-center">
+          <h2 class="mb-5">Learning Achievements</h2>
+        </div>
+        <div class="row no-gutters">
+          <div>
+            <b-table striped hover :items="items"></b-table>
+          </div>
+        </div>
+      </div>
+    </section>-->
 
-
-
-    <!-- LINKS -->
+    <section class="content-section" id="history">
+      <div class="container text-padding-top">
+        <div class="content-section-heading text-center">
+          <h2 class="mb-5">Work History</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <b-card-group deck>
+              <b-card title="Title" header-tag="header" footer-tag="footer">
+                <template #header>
+                  <h6 class="mb-0">Header Slot</h6>
+                </template>
+                <b-card-text>Header and footers using slots.</b-card-text>
+                <b-button href="#" variant="primary">Go somewhere</b-button>
+                <template #footer>
+                  <em>Footer Slot</em>
+                </template>
+              </b-card>
+            </b-card-group>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </section>
     <section class="content-section bg-dark text-white text-center" id="links">
       <div class="container pt-5 mb-5 mt-5">
         <div class="row">
@@ -267,7 +318,43 @@ export default {
       errorValid: false,
       errorMassageValid: 'The email must be a valid email',
       firebaseError: false,
-      errorSendingEmail: 'An error Occurred sending the email'
+      errorSendingEmail: 'An error Occurred sending the email',
+      fields:[
+        'skills',
+        'years',
+        { key: 'level', label: 'Ability' }
+      ],
+      toolfields:[
+        'tools',
+        'years',
+        { key: 'level', label: 'Ability' }
+      ],
+      skill: [
+        { skills: 'PHP OOP', years: 7, level:70},
+        { skills: 'LARAVEL', years: 3, level:45 },
+        { skills: 'CSS', years: 12, level:75 },
+        { skills: 'SCSS', years: 3, level:55 },
+        { skills: 'Bootstrap', years: 7, level:65 },
+        { skills: 'HTML', years: 12, level:75 },
+        { skills: 'MySQL', years: 7, level:65 },
+        { skills: 'JQuery', years: 7, level:65 },
+        { skills: 'Javascript', years: 5, level:65 },
+        { skills: 'JSON', years: 7, level:65 },
+        { skills: 'AJAX', years: 7, level:65 },
+        { skills: 'Vuejs', years: 3, level:45 },
+        { skills: 'Docker', years: 1, level:35 }
+      ],
+      tools: [
+        { tools: 'Git/Git Flow', years: 4, level: 50 },
+        { tools: 'Docker', years: 1, level:35 },
+        { tools: 'PHPStorm', years: 5, level:65 },
+        { tools: 'MS Office', years: 10, level:65 },
+      ],
+      lang: [
+        { language: 'German', proficiency: 'Mother language', information:'Born in Switzerland' },
+        { language: 'English', proficiency: 'Daily use Proficient User', information:'In the USA for over 20 years' },
+      ]
+
     }
   },
   props: {
