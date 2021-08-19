@@ -69,7 +69,9 @@
       </div>
     </section>
     <!-- Portfolio -->
-
+//add programing languages I know
+//add work history
+//add skills
 
 
     <section class="content-section" id="projects">
@@ -82,7 +84,6 @@
         </div>
       </div>
     </section>
-
 
 
 
