@@ -123,14 +123,34 @@
           <div class="col-md-2"></div>
           <div class="col-md-8">
             <b-card-group deck>
-              <b-card title="Title" header-tag="header" footer-tag="footer">
+              <b-card title="Application Developer" header-tag="header" footer-tag="footer">
                 <template #header>
-                  <h6 class="mb-0">Header Slot</h6>
+                    <h1 class="mb-0" style="color: red;font-weight:bold;">ALLBRIDGE</h1>
                 </template>
-                <b-card-text>Header and footers using slots.</b-card-text>
-                <b-button href="#" variant="primary">Go somewhere</b-button>
+                <b-card-text>Laravel Development, Vuejs, Docker environment and Git. Backend Rest API. Workflow with large Application that maintain and control Networking data, support and customer services.</b-card-text>
                 <template #footer>
-                  <em>Footer Slot</em>
+                  <div style="float: left">
+                    <em>Rahleigh, NC</em>
+                  </div>
+                  <div style="float: right">
+                    <em>July 2021 - current</em>
+                  </div>
+                </template>
+              </b-card>
+            </b-card-group>
+            <b-card-group deck class="mt-4">
+              <b-card title="Web Developer" header-tag="header" footer-tag="footer">
+                <template #header>
+                  <h1 class="mb-0" style="color: darkblue;font-weight:bold;">Business Information System</h1>
+                </template>
+                <b-card-text>Full Stack developer PHP OOP, Vuejs, Git, API, Cron Jobs.</b-card-text>
+                <template #footer>
+                  <div style="float: left">
+                    <em>Piney Flats, TN</em>
+                  </div>
+                  <div style="float: right">
+                    <em>August 2014 - June 2021</em>
+                  </div>
                 </template>
               </b-card>
             </b-card-group>
