@@ -125,9 +125,16 @@
             <b-card-group deck>
               <b-card title="Application Developer" header-tag="header" footer-tag="footer">
                 <template #header>
-                    <h1 class="mb-0" style="color: red;font-weight:bold;">ALLBRIDGE</h1>
+                    <h2 class="mb-0">
+                      <div v-b-hover="handleHover">
+                        <b-icon v-if="isHovered" icon="link45deg" scale="1"></b-icon>
+                        <a href="https://allbridge.com/" target="_blank" style="color: red;font-weight:bold;text-decoration: none">ALLBRIDGE</a>
+                      </div>
+                    </h2>
                 </template>
-                <b-card-text>Laravel Development, Vuejs, Docker environment and Git. Backend Rest API. Workflow with large Application that maintain and control Networking data, support and customer services.</b-card-text>
+                <b-card-text>
+                  Laravel Development, Vuejs, Docker environment and Git. Backend Rest API. Workflow with large Application that maintain and control Networking data, support and customer services.
+                </b-card-text>
                 <template #footer>
                   <div style="float: left">
                     <em>Rahleigh, NC</em>
@@ -141,15 +148,36 @@
             <b-card-group deck class="mt-4">
               <b-card title="Web Developer" header-tag="header" footer-tag="footer">
                 <template #header>
-                  <h1 class="mb-0" style="color: darkblue;font-weight:bold;">Business Information System</h1>
+                  <h2 class="mb-0" >
+                    <div v-b-hover="handleHoverBIS">
+                      <b-icon v-if="isHoveredBIS" icon="link45deg" scale="1"></b-icon>
+                      <a href="https://www.bisonline.com/" target="_blank" style="color: blue;font-weight:bold; text-decoration: none">Business Information System</a>
+                    </div>
+                  </h2>
                 </template>
-                <b-card-text>Full Stack developer PHP OOP, Vuejs, Git, API, Cron Jobs.</b-card-text>
+                <b-card-text> PHP OOP, Vuejs, Git, API's, Bootstrap,JQuery and Cron Jobs. Software development for the eastern states and counties that include Vehicle Titling and Registration, Electronic Insurance Verification System, and Print-on-Demand Dealer Drive-Out Tag. </b-card-text>
                 <template #footer>
                   <div style="float: left">
                     <em>Piney Flats, TN</em>
                   </div>
                   <div style="float: right">
                     <em>August 2014 - June 2021</em>
+                  </div>
+                </template>
+              </b-card>
+            </b-card-group>
+            <b-card-group deck class="mt-4">
+              <b-card title="Full Stack Developer" header-tag="header" footer-tag="footer">
+                <template #header>
+                  <h2 class="mb-0" style="color: black;font-weight:bold;">Free Lance Developer</h2>
+                </template>
+                <b-card-text>HTML, CSS, PHP, Wordpress. Developing Websites for customers on a Freelance base to build my skills. </b-card-text>
+                <template #footer>
+                  <div style="float: left">
+                    <em>Mountain City, TN</em>
+                  </div>
+                  <div style="float: right">
+                    <em>2008 - 2019</em>
                   </div>
                 </template>
               </b-card>
@@ -180,7 +208,6 @@
                 <div>
                   <span>LinkedIN</span>
                 </div>
-
               </a>
             </div>
           </div>
@@ -201,6 +228,9 @@
     <section class="content-section" id="contact">
       <div class="section-content">
         <h3>Contact Me</h3>
+      </div>
+      <div style="text-align: center">
+        <h3 class="mt-4" style="color: darkblue"> <font-awesome-icon icon="envelope-open-text" /> odettesimons@centurylink.net</h3>
       </div>
       <div class="contact-section">
         <div class="container text-padding-top text-padding-bottom">
@@ -373,8 +403,9 @@ export default {
       lang: [
         { language: 'German', proficiency: 'Mother language', information:'Born in Switzerland' },
         { language: 'English', proficiency: 'Daily use Proficient User', information:'In the USA for over 20 years' },
-      ]
-
+      ],
+      isHovered: false,
+      isHoveredBIS: false
     }
   },
   props: {
@@ -424,6 +455,12 @@ export default {
           window.scrollTo(0, el.offsetTop - 180)
         },1)
       }
+    },
+    handleHover(hovered) {
+      this.isHovered = hovered
+    },
+    handleHoverBIS(hovered) {
+      this.isHoveredBIS = hovered
     }
   }
 }

@@ -2,14 +2,18 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret,faCodeBranch,faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret,faCodeBranch,faCheck,faEnvelopeOpenText,faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
+import { VBHover } from 'bootstrap-vue'
 import { auth } from '@/firebase'
 
-
-library.add(faUserSecret,faCodeBranch,faCheck)
+library.add(faUserSecret,faCodeBranch,faCheck,faEnvelopeOpenText,faEnvelope)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
+Vue.use(BootstrapVue)
+Vue.use(BootstrapVueIcons)
+Vue.directive('b-hover', VBHover)
 
 let app
 auth.onAuthStateChanged(() => {

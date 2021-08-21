@@ -23,9 +23,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#skill">Skills</a>
             </li>
-            <li class="nav-item">
+<!--            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#achievement">Achievements</a>
-            </li>
+            </li>-->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#history">Work History</a>
             </li>
