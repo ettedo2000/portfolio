@@ -230,7 +230,10 @@
         <h3>Contact Me</h3>
       </div>
       <div style="text-align: center">
-        <h3 class="mt-4" style="color: darkblue"> <font-awesome-icon icon="envelope-open-text" /> odettesimons@centurylink.net</h3>
+        <h3 class="mt-4" style="color: darkblue;font-weight: bold">
+          <font-awesome-icon icon="envelope-open-text" />
+          odettesimons@centurylink.net
+        </h3>
       </div>
       <div class="contact-section">
         <div class="container text-padding-top text-padding-bottom">
